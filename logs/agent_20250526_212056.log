@@ -1,0 +1,132 @@
+2025-05-26 21:20:56,219 - AgentMCP - INFO - 🚀 初始化MCP服务器
+2025-05-26 21:20:56,219 - AgentMCP - INFO - 🔧 初始化功能注册器
+2025-05-26 21:20:56,219 - AgentMCP - INFO - ✅ 注册功能: process_data
+2025-05-26 21:20:56,220 - AgentMCP - INFO - ✅ 注册功能: validate_data
+2025-05-26 21:20:56,220 - AgentMCP - INFO - ✅ 注册功能: analyze_data
+2025-05-26 21:20:56,220 - AgentMCP - INFO - ✅ 注册功能: read_file
+2025-05-26 21:20:56,220 - AgentMCP - INFO - ✅ 注册功能: write_file
+2025-05-26 21:20:56,222 - AgentMCP - INFO - ✅ 注册功能: http_request
+2025-05-26 21:20:56,222 - AgentMCP - INFO - ✅ 注册功能: send_email
+2025-05-26 21:20:56,222 - AgentMCP - INFO - ✅ 注册功能: database_query
+2025-05-26 21:20:56,222 - AgentMCP - INFO - ✅ 注册功能: database_insert
+2025-05-26 21:20:56,222 - AgentMCP - INFO - ✅ 注册功能: database_update
+2025-05-26 21:20:56,222 - AgentMCP - INFO - 📦 功能注册完成，共注册 10 个功能
+2025-05-26 21:20:56,223 - AgentMCP - INFO - ✅ MCP服务器启动成功
+2025-05-26 21:20:56,223 - AgentMCP - INFO - 🧠 初始化大模型客户端 - 模型: Qwen3-32B-AWQ
+2025-05-26 21:20:56,223 - AgentMCP - INFO - ⚡ 初始化任务执行器
+2025-05-26 21:20:56,223 - AgentMCP - INFO - 🤖 Agent初始化完成
+2025-05-26 21:20:56,223 - AgentMCP - INFO - 📋 [MCP] 返回可用功能列表，共 10 个功能
+2025-05-26 21:20:56,225 - AgentMCP - INFO - 🎯 Agent接收到用户查询: 从数据库查询用户信息，验证数据格式，处理后保存到文件
+2025-05-26 21:20:56,225 - AgentMCP - INFO - 📋 获取MCP服务器可用功能列表...
+2025-05-26 21:20:56,225 - AgentMCP - INFO - 📋 [MCP] 返回可用功能列表，共 10 个功能
+2025-05-26 21:20:56,225 - AgentMCP - INFO - 📦 获取到 10 个可用功能
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - process_data: 处理和转换数据格式
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - validate_data: 验证数据格式和完整性
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - analyze_data: 分析数据并生成统计信息
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - read_file: 读取文件内容
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - write_file: 写入文件内容
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - http_request: 发送HTTP请求
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - send_email: 发送电子邮件
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - database_query: 执行数据库查询
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - database_insert: 插入数据到数据库
+2025-05-26 21:20:56,226 - AgentMCP - INFO -   - database_update: 更新数据库记录
+2025-05-26 21:20:56,226 - AgentMCP - INFO - 🧠 调用大模型进行任务分析...
+2025-05-26 21:20:56,226 - AgentMCP - INFO - 🔍 [LLM] 开始任务分析 - 查询: 从数据库查询用户信息，验证数据格式，处理后保存到文件
+2025-05-26 21:20:56,226 - AgentMCP - INFO - 🧠 [LLM] 发送任务分析请求
+2025-05-26 21:20:56,227 - AgentMCP - INFO - 🌐 [LLM] 发送请求到大模型 - URL: http://192.168.101.214:6007/v1/chat/completions
+2025-05-26 21:20:56,227 - AgentMCP - INFO - 📝 [LLM] 请求消息数量: 1
+2025-05-26 21:20:56,932 - httpx - INFO - HTTP Request: POST http://192.168.101.214:6007/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2025-05-26 21:20:56,934 - AgentMCP - ERROR - ❌ [LLM] 大模型调用失败: Server error '502 Bad Gateway' for url 'http://192.168.101.214:6007/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2025-05-26 21:20:56,934 - AgentMCP - INFO - 🔄 [LLM] 使用模拟响应
+2025-05-26 21:20:56,940 - AgentMCP - INFO - ✅ [LLM] 任务分析成功 - 生成 4 个步骤
+2025-05-26 21:20:56,940 - AgentMCP - INFO - 💭 [LLM] 分析理由: 首先验证输入数据，然后查询数据库，处理数据，最后保存结果到文件
+2025-05-26 21:20:56,941 - AgentMCP - INFO - 📋 大模型生成执行计划成功
+2025-05-26 21:20:56,941 - AgentMCP - INFO - 📊 计划步骤数: 4
+2025-05-26 21:20:56,941 - AgentMCP - INFO - 💭 分析理由: 首先验证输入数据，然后查询数据库，处理数据，最后保存结果到文件
+2025-05-26 21:20:56,942 - AgentMCP - INFO -   步骤1: validate_data - 参数: {'data': '用户查询数据', 'rules': {'min_length': 1}}
+2025-05-26 21:20:56,942 - AgentMCP - INFO -   步骤2: database_query - 参数: {'sql': 'SELECT * FROM users LIMIT 10'}
+2025-05-26 21:20:56,944 - AgentMCP - INFO -   步骤3: process_data - 参数: {'data': '查询结果', 'operation': 'format'}
+2025-05-26 21:20:56,944 - AgentMCP - INFO -   步骤4: write_file - 参数: {'file_path': 'output/result.txt', 'content': '处理后的数据'}
+2025-05-26 21:20:56,945 - AgentMCP - INFO - ⚡ 开始执行任务计划...
+2025-05-26 21:20:56,945 - AgentMCP - INFO - 🚀 开始执行任务计划
+2025-05-26 21:20:56,945 - AgentMCP - INFO - 📋 计划步骤数: 4
+2025-05-26 21:20:56,945 - AgentMCP - INFO - 🎯 原始查询: 从数据库查询用户信息，验证数据格式，处理后保存到文件
+2025-05-26 21:20:56,946 - AgentMCP - INFO - 📍 执行步骤 1: validate_data
+2025-05-26 21:20:56,946 - AgentMCP - INFO - ⚡ [执行器] 调用MCP服务器执行功能: validate_data
+2025-05-26 21:20:56,946 - AgentMCP - INFO - 🎯 [MCP] 接收到功能调用请求 - 功能: validate_data
+2025-05-26 21:20:56,946 - AgentMCP - INFO - 📝 [MCP] 调用参数: {'data': '用户查询数据', 'rules': {'min_length': 1}}
+2025-05-26 21:20:56,946 - AgentMCP - INFO - ⚡ [MCP] 开始执行功能: validate_data
+2025-05-26 21:20:57,457 - AgentMCP - INFO - ✅ [MCP] 功能执行完成: validate_data
+2025-05-26 21:20:57,457 - AgentMCP - INFO - ✅ 步骤 1 执行成功 - 耗时: 0.51秒
+2025-05-26 21:20:57,458 - AgentMCP - INFO - 📊 执行结果详情: {'is_valid': True, 'data': '用户查询数据', 'validation_rules': {'min_length': 1}}
+2025-05-26 21:20:57,459 - AgentMCP - INFO - 🤖 询问大模型关于下一步的决策...
+2025-05-26 21:20:57,460 - AgentMCP - INFO - 🤔 [LLM] 开始决策下一步 - 已执行 1 步，剩余 3 步
+2025-05-26 21:20:57,460 - AgentMCP - INFO - 🧠 [LLM] 发送决策请求
+2025-05-26 21:20:57,461 - AgentMCP - INFO - 🌐 [LLM] 发送请求到大模型 - URL: http://192.168.101.214:6007/v1/chat/completions
+2025-05-26 21:20:57,463 - AgentMCP - INFO - 📝 [LLM] 请求消息数量: 1
+2025-05-26 21:20:58,108 - httpx - INFO - HTTP Request: POST http://192.168.101.214:6007/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2025-05-26 21:20:58,111 - AgentMCP - ERROR - ❌ [LLM] 大模型调用失败: Server error '502 Bad Gateway' for url 'http://192.168.101.214:6007/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2025-05-26 21:20:58,111 - AgentMCP - INFO - 🔄 [LLM] 使用模拟响应
+2025-05-26 21:20:58,115 - AgentMCP - INFO - ✅ [LLM] 决策完成 - 动作: continue
+2025-05-26 21:20:58,116 - AgentMCP - INFO - 💭 [LLM] 决策理由: 上一步执行成功，继续按计划执行
+2025-05-26 21:20:58,116 - AgentMCP - INFO - 🧠 大模型决策: continue - 理由: 上一步执行成功，继续按计划执行
+2025-05-26 21:20:58,118 - AgentMCP - INFO - ➡️  大模型决定继续执行原计划
+2025-05-26 21:20:58,118 - AgentMCP - INFO - ⏳ 等待5秒后执行下一步...
+2025-05-26 21:21:03,177 - AgentMCP - INFO - 📍 执行步骤 2: database_query
+2025-05-26 21:21:03,179 - AgentMCP - INFO - ⚡ [执行器] 调用MCP服务器执行功能: database_query
+2025-05-26 21:21:03,179 - AgentMCP - INFO - 🎯 [MCP] 接收到功能调用请求 - 功能: database_query
+2025-05-26 21:21:03,180 - AgentMCP - INFO - 📝 [MCP] 调用参数: {'sql': 'SELECT * FROM users LIMIT 10'}
+2025-05-26 21:21:03,180 - AgentMCP - INFO - ⚡ [MCP] 开始执行功能: database_query
+2025-05-26 21:21:04,225 - AgentMCP - INFO - ✅ [MCP] 功能执行完成: database_query
+2025-05-26 21:21:04,226 - AgentMCP - ERROR - ❌ 步骤 2 执行失败: (1146, "Table 'envom.users' doesn't exist")
+2025-05-26 21:21:04,227 - AgentMCP - INFO - 🤖 询问大模型关于下一步的决策...
+2025-05-26 21:21:04,227 - AgentMCP - INFO - 🤔 [LLM] 开始决策下一步 - 已执行 2 步，剩余 2 步
+2025-05-26 21:21:04,228 - AgentMCP - INFO - 🧠 [LLM] 发送决策请求
+2025-05-26 21:21:04,228 - AgentMCP - INFO - 🌐 [LLM] 发送请求到大模型 - URL: http://192.168.101.214:6007/v1/chat/completions
+2025-05-26 21:21:04,229 - AgentMCP - INFO - 📝 [LLM] 请求消息数量: 1
+2025-05-26 21:21:04,862 - httpx - INFO - HTTP Request: POST http://192.168.101.214:6007/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2025-05-26 21:21:04,863 - AgentMCP - ERROR - ❌ [LLM] 大模型调用失败: Server error '502 Bad Gateway' for url 'http://192.168.101.214:6007/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2025-05-26 21:21:04,863 - AgentMCP - INFO - 🔄 [LLM] 使用模拟响应
+2025-05-26 21:21:04,867 - AgentMCP - INFO - ✅ [LLM] 决策完成 - 动作: continue
+2025-05-26 21:21:04,867 - AgentMCP - INFO - 💭 [LLM] 决策理由: 上一步执行成功，继续按计划执行
+2025-05-26 21:21:04,867 - AgentMCP - INFO - 🧠 大模型决策: continue - 理由: 上一步执行成功，继续按计划执行
+2025-05-26 21:21:04,868 - AgentMCP - INFO - ➡️  大模型决定继续执行原计划
+2025-05-26 21:21:04,868 - AgentMCP - INFO - ⏳ 等待5秒后执行下一步...
+2025-05-26 21:21:09,921 - AgentMCP - INFO - 📍 执行步骤 3: process_data
+2025-05-26 21:21:09,924 - AgentMCP - INFO - ⚡ [执行器] 调用MCP服务器执行功能: process_data
+2025-05-26 21:21:09,924 - AgentMCP - INFO - 🎯 [MCP] 接收到功能调用请求 - 功能: process_data
+2025-05-26 21:21:09,924 - AgentMCP - INFO - 📝 [MCP] 调用参数: {'data': '查询结果', 'operation': 'format'}
+2025-05-26 21:21:09,925 - AgentMCP - INFO - ⚡ [MCP] 开始执行功能: process_data
+2025-05-26 21:21:10,935 - AgentMCP - INFO - ✅ [MCP] 功能执行完成: process_data
+2025-05-26 21:21:10,935 - AgentMCP - INFO - ✅ 步骤 3 执行成功 - 耗时: 1.01秒
+2025-05-26 21:21:10,937 - AgentMCP - INFO - 📊 执行结果详情: {'original_data': '查询结果', 'operation': 'format', 'processed_data': 'Processed: 查询结果', 'timestamp': 1748265670.935044}
+2025-05-26 21:21:10,937 - AgentMCP - INFO - 🤖 询问大模型关于下一步的决策...
+2025-05-26 21:21:10,938 - AgentMCP - INFO - 🤔 [LLM] 开始决策下一步 - 已执行 3 步，剩余 1 步
+2025-05-26 21:21:10,939 - AgentMCP - INFO - 🧠 [LLM] 发送决策请求
+2025-05-26 21:21:10,939 - AgentMCP - INFO - 🌐 [LLM] 发送请求到大模型 - URL: http://192.168.101.214:6007/v1/chat/completions
+2025-05-26 21:21:10,940 - AgentMCP - INFO - 📝 [LLM] 请求消息数量: 1
+2025-05-26 21:21:11,593 - httpx - INFO - HTTP Request: POST http://192.168.101.214:6007/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2025-05-26 21:21:11,595 - AgentMCP - ERROR - ❌ [LLM] 大模型调用失败: Server error '502 Bad Gateway' for url 'http://192.168.101.214:6007/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2025-05-26 21:21:11,595 - AgentMCP - INFO - 🔄 [LLM] 使用模拟响应
+2025-05-26 21:21:11,599 - AgentMCP - INFO - ✅ [LLM] 决策完成 - 动作: continue
+2025-05-26 21:21:11,600 - AgentMCP - INFO - 💭 [LLM] 决策理由: 上一步执行成功，继续按计划执行
+2025-05-26 21:21:11,600 - AgentMCP - INFO - 🧠 大模型决策: continue - 理由: 上一步执行成功，继续按计划执行
+2025-05-26 21:21:11,601 - AgentMCP - INFO - ➡️  大模型决定继续执行原计划
+2025-05-26 21:21:11,602 - AgentMCP - INFO - ⏳ 等待5秒后执行下一步...
+2025-05-26 21:21:16,647 - AgentMCP - INFO - 📍 执行步骤 4: write_file
+2025-05-26 21:21:16,648 - AgentMCP - INFO - ⚡ [执行器] 调用MCP服务器执行功能: write_file
+2025-05-26 21:21:16,649 - AgentMCP - INFO - 🎯 [MCP] 接收到功能调用请求 - 功能: write_file
+2025-05-26 21:21:16,649 - AgentMCP - INFO - 📝 [MCP] 调用参数: {'file_path': 'output/result.txt', 'content': '处理后的数据'}
+2025-05-26 21:21:16,650 - AgentMCP - INFO - ⚡ [MCP] 开始执行功能: write_file
+2025-05-26 21:21:17,858 - AgentMCP - INFO - ✅ [MCP] 功能执行完成: write_file
+2025-05-26 21:21:17,859 - AgentMCP - INFO - ✅ 步骤 4 执行成功 - 耗时: 1.21秒
+2025-05-26 21:21:17,860 - AgentMCP - INFO - 📊 执行结果详情: {'file_path': 'output/result.txt', 'content_length': 6, 'message': 'Successfully wrote to output/result.txt'}
+2025-05-26 21:21:17,860 - AgentMCP - INFO - 🎉 任务计划执行完成！共执行 4 个步骤
+2025-05-26 21:21:17,861 - AgentMCP - INFO - 📈 执行统计: 计划4步, 执行4步, 成功3步, 失败1步
+2025-05-26 21:21:17,862 - AgentMCP - INFO - ⏱️  总耗时: 3.78秒, 平均每步: 0.95秒
+2025-05-26 21:21:17,862 - AgentMCP - INFO - 📊 成功率: 75.0%
+2025-05-26 21:21:17,864 - AgentMCP - INFO - 📊 生成执行总结: {'total_planned_steps': 4, 'total_executed_steps': 4, 'successful_steps': 3, 'failed_steps': 1, 'total_execution_time': 3.78225040435791, 'average_step_time': 0.9455626010894775, 'success_rate': 0.75, 'status': 'partial_success'}
